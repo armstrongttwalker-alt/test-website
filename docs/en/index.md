@@ -1,5 +1,5 @@
 ---
-title: Welcome to My Landing Page
+title: FlagOpen 大模型技术开源体系
 site:
   hide_outline: true
   hide_toc: true
@@ -7,266 +7,316 @@ site:
 ---
 
 <style>
-/* 自定义样式 */
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #7c3aed;
-  --accent-color: #059669;
-  --card-bg: #ffffff;
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --flagos-blue: #1e6bff;
+  --flagos-blue-dark: #0a4dbf;
+  --flagos-blue-light: #e8f1ff;
+  --flagos-gray-100: #f8f9fa;
+  --flagos-gray-200: #e9ecef;
+  --flagos-gray-800: #343a40;
+  --flagos-text: #212529;
+  --flagos-text-light: #6c757d;
 }
 
-/* 页面标题样式 */
-.landing-header {
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 页面头部样式 */
+.flagos-header {
   text-align: center;
-  margin-bottom: 3rem;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  border-radius: 1rem;
-  border-left: 4px solid var(--primary-color);
+  margin: 0 auto 4rem;
+  max-width: 800px;
+  padding: 0 1rem;
 }
 
-.landing-header h1 {
-  color: #1e293b;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.flagos-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--flagos-text);
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.landing-header p {
-  color: #64748b;
-  font-size: 1.125rem;
-  max-width: 600px;
+.flagos-header p {
+  font-size: 1.25rem;
+  color: var(--flagos-text-light);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* 网格布局 - 完全复制flagos.io的3列布局 */
+.flagos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
-/* 卡片增强样式 */
-.sd-card {
-  transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
+/* 卡片样式 - 完全匹配flagos.io */
+.flagos-card {
+  background: white;
   border-radius: 12px;
-  overflow: hidden;
+  border: 1px solid var(--flagos-gray-200);
+  padding: 2rem;
   height: 100%;
-  background: var(--card-bg) !important;
-  box-shadow: var(--card-shadow) !important;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  overflow: hidden;
 }
 
-.sd-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--card-shadow-hover) !important;
-  border-color: var(--primary-color);
+.flagos-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(30, 107, 255, 0.1);
+  border-color: var(--flagos-blue);
 }
 
-.sd-card::before {
+.flagos-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 4px;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--flagos-blue), #4dabff);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.sd-card:hover::before {
+.flagos-card:hover::before {
   opacity: 1;
 }
 
-.sd-card-header {
-  padding: 1.5rem 1.5rem 0.5rem;
-  border-bottom: none !important;
-}
-
-.sd-card-title {
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  color: #1e293b !important;
-  margin-bottom: 0.75rem !important;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* 卡片图标 */
-.card-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+/* 图标样式 */
+.card-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: white;
-  font-size: 0.875rem;
-  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+  background: var(--flagos-blue-light);
 }
 
-.icon-gem { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
-.icon-tree { background: linear-gradient(135deg, #10b981, #059669); }
-.icon-scale { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-.icon-connect { background: linear-gradient(135deg, #f59e0b, #d97706); }
-.icon-magic { background: linear-gradient(135deg, #ec4899, #db2777); }
-.icon-rocket { background: linear-gradient(135deg, #06b6d4, #0891b2); }
-.icon-chart { background: linear-gradient(135deg, #f97316, #ea580c); }
+.card-icon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--flagos-blue), var(--flagos-blue-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-.sd-card-body {
-  padding: 0.5rem 1.5rem 1rem;
-  color: #64748b;
+/* 卡片标题 */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--flagos-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* 卡片描述 */
+.card-description {
+  color: var(--flagos-text-light);
   line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
-.sd-card-footer {
-  padding: 1rem 1.5rem 1.5rem;
-  background: transparent !important;
-  border-top: 1px solid #f1f5f9 !important;
+/* 卡片底部链接按钮 - 匹配flagos.io按钮样式 */
+.card-footer {
+  margin-top: auto;
 }
 
-.sd-card-footer a {
+.card-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.375rem;
-  padding: 0.5rem 1rem;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: white !important;
+  gap: 0.5rem;
+  color: var(--flagos-blue);
   text-decoration: none;
-  border-radius: 6px;
   font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
-  border: none;
 }
 
-.sd-card-footer a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+.card-link:hover {
+  color: var(--flagos-blue-dark);
+  border-bottom-color: var(--flagos-blue);
 }
 
-/* 响应式调整 */
+.card-link::after {
+  content: '→';
+  font-size: 1.25em;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover::after {
+  transform: translateX(4px);
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
-  .landing-header h1 {
-    font-size: 2rem;
+  .flagos-header h1 {
+    font-size: 2.25rem;
   }
   
-  .landing-header p {
-    font-size: 1rem;
+  .flagos-header p {
+    font-size: 1.125rem;
   }
   
-  .sd-card {
-    margin-bottom: 1rem;
+  .flagos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
+}
+
+/* 主题切换支持 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --flagos-blue: #4dabff;
+    --flagos-blue-dark: #1e6bff;
+    --flagos-blue-light: rgba(30, 107, 255, 0.1);
+    --flagos-gray-100: #1a1d1e;
+    --flagos-gray-200: #2d3236;
+    --flagos-gray-800: #f8f9fa;
+    --flagos-text: #f8f9fa;
+    --flagos-text-light: #adb5bd;
+  }
+  
+  .flagos-card {
+    background: var(--flagos-gray-100);
+    border-color: var(--flagos-gray-200);
+  }
+}
+
+/* 使用Sphinx主题变量覆盖 */
+.sd-card {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 </style>
 
-<div class="landing-header">
-  <h1>FlagOpen 生态工具集</h1>
-  <p>一套完整的AI开发工具链，为人工智能模型开发与部署提供全方位支持</p>
+<div class="flagos-header">
+  <h1>FlagOpen 大模型技术开源体系</h1>
+  <p>一套完整的 AI 开发工具链，为人工智能模型开发与部署提供全方位支持，助力国产 AI 芯片生态建设</p>
 </div>
 
-::::{grid} 1 2 3 3
-:gutter: 3
+<div class="flagos-grid">
+  <!-- FlagGems -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">FG</span>
+    </div>
+    <h3 class="card-title">FlagGems</h3>
+    <div class="card-description">
+      基于 Triton 的高性能通用算子库，为大模型提供跨平台的高性能算子实现，加速模型推理与训练过程。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-:::{grid-item-card} 
-:link: 
-:link-type: url
+  <!-- FlagTree -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">FT</span>
+    </div>
+    <h3 class="card-title">FlagTree</h3>
+    <div class="card-description">
+      面向多元 AI 芯片的编译器平台，提供统一的 Triton 生态支持，简化模型在不同硬件上的部署复杂度。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-**FlagGems** <span class="card-icon icon-gem">FG</span>
-^^^
-FlagGems 是一款使用Triton编程语言及其扩展语言实现的高性能通用算子库。旨在为大模型提供一系列通用算子，加速模型面向多种后端平台的推理与训练。
-+++
-[了解更多 →](#)
-:::
+  <!-- FlagScale -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">FS</span>
+    </div>
+    <h3 class="card-title">FlagScale</h3>
+    <div class="card-description">
+      全流程大模型工具集，支持从训练到部署的完整生命周期管理，提供企业级的大模型解决方案。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-:::{grid-item-card} 
-:link: 
-:link-type: url
+  <!-- FlagCX -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">CX</span>
+    </div>
+    <h3 class="card-title">FlagCX</h3>
+    <div class="card-description">
+      自适应跨芯片通信库，提供高性能的点对点与集合通信能力，优化分布式训练和推理性能。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-**FlagTree** <span class="card-icon icon-tree">FT</span>
-^^^
-FlagTree 是一款面向多种 AI 芯片的开源、统一编译器。致力于打造多元 AI 芯片编译器及相关工具平台，发展和壮大Triton 上下游生态。
-+++
-[了解更多 →](#)
-:::
+  <!-- KernelGen -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">KG</span>
+    </div>
+    <h3 class="card-title">KernelGen</h3>
+    <div class="card-description">
+      算子自动生成工具，通过自然语言描述自动生成优化算子，大幅提升开发效率与代码质量。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-:::{grid-item-card} 
-:link: 
-:link-type: url
+  <!-- FlagRelease -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">FR</span>
+    </div>
+    <h3 class="card-title">FlagRelease</h3>
+    <div class="card-description">
+      自动化模型迁移与发布平台，提供标准化的多芯片适配流程，降低模型迁移成本与风险。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
 
-**FlagScale** <span class="card-icon icon-scale">FS</span>
-^^^
-FlagScale 是一款全流程大模型工具集，可支持大模型的完整生命周期管理。依托主流开源项目的技术优势，为大模型的管理与规模化部署提供端到端解决方案。
-+++
-[了解更多 →](#)
-:::
+  <!-- FlagPerf -->
+  <div class="flagos-card">
+    <div class="card-icon-wrapper">
+      <span class="card-icon">FP</span>
+    </div>
+    <h3 class="card-title">FlagPerf</h3>
+    <div class="card-description">
+      AI 硬件评测引擎，建立产业实践导向的指标体系，全面评估芯片在实际场景中的性能表现。
+    </div>
+    <div class="card-footer">
+      <a href="#" class="card-link">了解更多</a>
+    </div>
+  </div>
+</div>
 
-:::{grid-item-card} 
-:link: 
-:link-type: url
-
-**FlagCX** <span class="card-icon icon-connect">CX</span>
-^^^
-FlagCX 是一款可扩展、自适应的跨芯片统一通信库。面向多芯片、多平台场景，提供高性能的点对点与集合通信能力。
-+++
-[了解更多 →](#)
-:::
-
-:::{grid-item-card} 
-:link: 
-:link-type: url
-
-**KernelGen** <span class="card-icon icon-magic">KG</span>
-^^^
-KernelGen 是一款算子自动生成工具。通过自然语言提示构建算子定义，自动完成算子准确率及性能测试，生成Triton算子。
-+++
-[了解更多 →](#)
-:::
-
-:::{grid-item-card} 
-:link: 
-:link-type: url
-
-**FlagRelease** <span class="card-icon icon-rocket">FR</span>
-^^^
-FlagRelease 是一款面向多架构人工智能芯片的大模型的自动迁移、适配与发布平台。通过自动化、标准化和智能化的适配流程，使主流大模型能够在不同国产人工智能芯片上高效完成模型迁移。
-+++
-[了解更多 →](#)
-:::
-
-:::{grid-item-card} 
-:link: 
-:link-type: url
-
-**FlagPerf** <span class="card-icon icon-chart">FP</span>
-^^^
-FlagPerf是一款一体化AI硬件评测引擎。旨在建立以产业实践为导向的指标体系，评测AI硬件在软件栈组合下的实际能力。
-+++
-[了解更多 →](#)
-:::
-
-:::{grid-item-card} FlagTree
-:link: 
-:link-type: url
-:class: has-icon-tree
-
-<span class="card-icon">FT</span>
-^^^
-FlagTree 是一款面向多种 AI 芯片的开源、统一编译器...
-+++
-[了解更多 →](#)
-:::
-
-
-::::
-
-<div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 12px;">
-  <h3 style="color: #1e293b; margin-bottom: 1rem;">开始使用 FlagOpen 生态</h3>
-  <p style="color: #64748b; max-width: 600px; margin: 0 auto 1.5rem;">选择适合您需求的工具，或查看完整文档以了解更多信息</p>
-  <a href="#" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: linear-gradient(to right, #059669, #10b981); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.2s ease;">
-    <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+<div style="text-align: center; margin: 4rem auto 0; padding: 3rem 2rem; background: linear-gradient(135deg, var(--flagos-blue-light), rgba(30, 107, 255, 0.05)); border-radius: 16px; max-width: 800px;">
+  <h2 style="font-size: 2rem; font-weight: 600; color: var(--flagos-text); margin-bottom: 1rem;">开始使用 FlagOpen</h2>
+  <p style="color: var(--flagos-text-light); margin-bottom: 2rem; line-height: 1.6; font-size: 1.125rem;">加入我们，共同构建开放的 AI 芯片开发生态系统</p>
+  <a href="#" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--flagos-blue); color: white; padding: 0.875rem 1.75rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.2s ease; border: 2px solid transparent;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 6V18M18 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     查看完整文档
   </a>
