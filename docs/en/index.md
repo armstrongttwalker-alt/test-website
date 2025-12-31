@@ -246,6 +246,19 @@ FlagPerf是一款一体化AI硬件评测引擎。旨在建立以产业实践为�
 [了解更多 →](#)
 :::
 
+:::{grid-item-card} FlagTree
+:link: 
+:link-type: url
+:class: has-icon-tree
+
+<span class="card-icon">FT</span>
+^^^
+FlagTree 是一款面向多种 AI 芯片的开源、统一编译器...
++++
+[了解更多 →](#)
+:::
+
+
 ::::
 
 <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 12px;">
