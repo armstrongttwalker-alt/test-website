@@ -305,7 +305,54 @@ body {
 <div class="flagos-header">
   <h1>FlagOS</h1>
   <p>A unified, open-source system software stack designed for a variety of AI chips</p>
+  <a href="#" class="flagos-overview-btn">
+    <span>FlagOS Overview</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
 </div>
+
+<style>
+/* 添加按钮样式 */
+.flagos-overview-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--flagos-blue);
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  margin-top: 1rem;
+}
+
+.flagos-overview-btn:hover {
+  background: var(--flagos-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 107, 255, 0.2);
+}
+
+.flagos-overview-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.flagos-overview-btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .flagos-overview-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+</style>
 
 <div class="flagos-grid">
   <!-- FlagGems -->
