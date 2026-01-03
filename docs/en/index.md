@@ -82,7 +82,7 @@ sd_hide_title: true
       An operator auto-generation tool.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">MORE</a>
+      <a href="https://docs.flagos.io/projects/kernelgen/en/latest/" class="card-link">MORE</a>
     </div>
   </div>
 
