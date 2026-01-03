@@ -19,6 +19,10 @@ site:
   --flagos-gray-800: #343a40;
   --flagos-text: #212529;
   --flagos-text-light: #6c757d;
+  
+  /* 添加卡片背景变量 */
+  --card-bg: white;
+  --card-border: var(--flagos-gray-200);
 }
 
 * {
@@ -59,9 +63,9 @@ site:
 
 /* 卡片样式 - 完全匹配flagos.io */
 .flagos-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
-  border: 1px solid var(--flagos-gray-200);
+  border: 1px solid var(--card-border);
   padding: 2rem;
   height: 100%;
   display: flex;
@@ -190,11 +194,8 @@ site:
     --flagos-gray-800: #f8f9fa;
     --flagos-text: #f8f9fa;
     --flagos-text-light: #adb5bd;
-  }
-  
-  .flagos-card {
-    background: var(--flagos-gray-100);
-    border-color: var(--flagos-gray-200);
+    --card-bg: var(--flagos-gray-100);
+    --card-border: var(--flagos-gray-200);
   }
 }
 
@@ -203,6 +204,50 @@ site:
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
+}
+
+/* 添加底部CTA容器的样式 */
+.flagos-cta {
+  text-align: center;
+  margin: 4rem auto 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--flagos-blue-light), rgba(30, 107, 255, 0.05));
+  border-radius: 16px;
+  max-width: 800px;
+}
+
+.flagos-cta h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--flagos-text);
+  margin-bottom: 1rem;
+}
+
+.flagos-cta p {
+  color: var(--flagos-text-light);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.flagos-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--flagos-blue);
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.flagos-cta a:hover {
+  background: var(--flagos-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 107, 255, 0.2);
 }
 </style>
 
@@ -311,10 +356,10 @@ site:
   </div>
 </div>
 
-<div style="text-align: center; margin: 4rem auto 0; padding: 3rem 2rem; background: linear-gradient(135deg, var(--flagos-blue-light), rgba(30, 107, 255, 0.05)); border-radius: 16px; max-width: 800px;">
-  <h2 style="font-size: 2rem; font-weight: 600; color: var(--flagos-text); margin-bottom: 1rem;">开始使用 FlagOpen</h2>
-  <p style="color: var(--flagos-text-light); margin-bottom: 2rem; line-height: 1.6; font-size: 1.125rem;">加入我们，共同构建开放的 AI 芯片开发生态系统</p>
-  <a href="#" style="display: inline-flex; align-items: center; gap: 0.75rem; background: var(--flagos-blue); color: white; padding: 0.875rem 1.75rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.2s ease; border: 2px solid transparent;">
+<div class="flagos-cta">
+  <h2>开始使用 FlagOpen</h2>
+  <p>加入我们，共同构建开放的 AI 芯片开发生态系统</p>
+  <a href="#">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 6V18M18 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
