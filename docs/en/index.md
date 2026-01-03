@@ -73,6 +73,7 @@ sd_hide_title: true
   </div>
 
   <!-- KernelGen -->
+<a href="https://docs.flagos.io/projects/kernelgen/en/latest/" class="flagos-card-link" target="_blank">
   <div class="flagos-card">
     <div class="card-icon-wrapper">
       <span class="card-icon">KG</span>
@@ -82,9 +83,10 @@ sd_hide_title: true
       An operator auto-generation tool.
     </div>
     <div class="card-footer">
-      <a href="https://docs.flagos.io/projects/kernelgen/en/latest/" class="card-link">MORE</a>
+      <span class="card-link">MORE</span>
     </div>
   </div>
+</a>
 
   <!-- FlagRelease -->
   <div class="flagos-card">
