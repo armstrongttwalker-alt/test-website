@@ -205,6 +205,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "show_sphinx": False, 
+    # Note we have omitted `theme-switcher` below
+    "navbar_end": ["navbar-icon-links"]
 }
 
 html_context = {
