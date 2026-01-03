@@ -194,7 +194,7 @@ html_theme_options = {
     "secondary_sidebar_items": {
         "path/to/page": [],
     },
-    "footer_start": [],
+    "footer_start": ["copyright,"],
     "footer_end": [],
     "show_sphinx": False, 
 }
