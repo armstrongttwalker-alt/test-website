@@ -175,6 +175,11 @@ html_theme_options = {
     "logo_only": True,
 }
 
+html_sidebars = {
+    "zh/index": [],
+    "en/index": [],
+}
+
 html_theme_options = {
     "logo": {
       "image_light": "_static/kernelgen-logo.svg",
@@ -189,6 +194,9 @@ html_theme_options = {
     # "path_to_docs": "docs",
     "use_repository_button": True,
     # "announcement": "<b>v3.0.0</b> is now out! See the Changelog for details",
+    "secondary_sidebar_items": {
+        "path/to/page": [],
+    },
 }
 
 # html_context = {
