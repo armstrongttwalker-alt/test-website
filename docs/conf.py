@@ -198,7 +198,7 @@ html_context = {
     "github_repo": "https://github.com/flagos-ai/KernelGen",
 #     "github_version": "main",
 #     "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
-# }
+}
 
 rst_epilog = """
 .. |org_brand| replace:: KernelGen Community
