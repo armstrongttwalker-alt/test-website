@@ -183,7 +183,7 @@ html_theme_options = {
     "home_page_in_toc": True,
     "use_download_button": False,
     "repository_url": "https://github.com/flagos-ai/KernelGen",
-    "use_edit_page_button": True,
+    # "use_edit_page_button": True,
     # "github_url": "https://github.com/flagos-ai/KernelGen",
     # "repository_branch": "master",
     # "path_to_docs": "docs",
@@ -191,14 +191,14 @@ html_theme_options = {
     # "announcement": "<b>v3.0.0</b> is now out! See the Changelog for details",
 }
 
-html_context = {
-#     "conf_py_path": f"/docs/{docset}/",
-    "display_github": True,
-#     "github_user": "armstrongttwalker-alt",
-    "github_repo": "https://github.com/flagos-ai/KernelGen",
-#     "github_version": "main",
-#     "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
-}
+# html_context = {
+# #     "conf_py_path": f"/docs/{docset}/",
+#     "display_github": True,
+# #     "github_user": "armstrongttwalker-alt",
+#     "github_repo": "https://github.com/flagos-ai/KernelGen",
+# #     "github_version": "main",
+# #     "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
+# }
 
 rst_epilog = """
 .. |org_brand| replace:: KernelGen Community
