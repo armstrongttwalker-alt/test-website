@@ -303,8 +303,8 @@ body {
 # FlagOS Documentation
 
 <div class="flagos-header">
-  <h1>FlagOpen 大模型技术开源体系</h1>
-  <p>一套完整的 AI 开发工具链，为人工智能模型开发与部署提供全方位支持，助力国产 AI 芯片生态建设</p>
+  <h1>FlagOS</h1>
+  <p>A unified, open-source system software stack designed for a variety of AI chips</p>
 </div>
 
 <div class="flagos-grid">
@@ -315,10 +315,10 @@ body {
     </div>
     <h3 class="card-title">FlagGems</h3>
     <div class="card-description">
-      基于 Triton 的高性能通用算子库，为大模型提供跨平台的高性能算子实现，加速模型推理与训练过程。
+      A high-performance general-purpose operator library implemented with the Triton programming language and its extended languages.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -329,10 +329,10 @@ body {
     </div>
     <h3 class="card-title">FlagTree</h3>
     <div class="card-description">
-      面向多元 AI 芯片的编译器平台，提供统一的 Triton 生态支持，简化模型在不同硬件上的部署复杂度。
+      An open-source, unified compiler for multiple AI chips.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -343,10 +343,10 @@ body {
     </div>
     <h3 class="card-title">FlagScale</h3>
     <div class="card-description">
-      全流程大模型工具集，支持从训练到部署的完整生命周期管理，提供企业级的大模型解决方案。
+      A comprehensive toolkit designed to support the entire lifecycle of large models.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -357,10 +357,10 @@ body {
     </div>
     <h3 class="card-title">FlagCX</h3>
     <div class="card-description">
-      自适应跨芯片通信库，提供高性能的点对点与集合通信能力，优化分布式训练和推理性能。
+      A scalable and adaptive unified communication library for cross-chip environments.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -371,10 +371,10 @@ body {
     </div>
     <h3 class="card-title">KernelGen</h3>
     <div class="card-description">
-      算子自动生成工具，通过自然语言描述自动生成优化算子，大幅提升开发效率与代码质量。
+      An operator auto-generation tool.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -385,10 +385,10 @@ body {
     </div>
     <h3 class="card-title">FlagRelease</h3>
     <div class="card-description">
-      自动化模型迁移与发布平台，提供标准化的多芯片适配流程，降低模型迁移成本与风险。
+      A platform dedicated to the automatic migration, adaptation and release of large models for multi-architecture AI chips.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 
@@ -399,21 +399,21 @@ body {
     </div>
     <h3 class="card-title">FlagPerf</h3>
     <div class="card-description">
-      AI 硬件评测引擎，建立产业实践导向的指标体系，全面评估芯片在实际场景中的性能表现。
+      An integrated AI hardware evaluation engine.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">了解更多</a>
+      <a href="#" class="card-link">MORE</a>
     </div>
   </div>
 </div>
 
 <div class="call-to-action">
-  <h2>开始使用 FlagOpen</h2>
-  <p>加入我们，共同构建开放的 AI 芯片开发生态系统</p>
+  <h2>Start to Use FlagOS</h2>
+  <p>Join us to co-build an open AI chip development ecosystem</p>
   <a href="#">
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 6V18M18 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    查看完整文档
+    View full document
   </a>
 </div>
