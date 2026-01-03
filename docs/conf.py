@@ -181,7 +181,7 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    "logo_only": True,
+    "logo_only": False,
     "home_page_in_toc": True,
     "use_download_button": False,
     "repository_url": "https://github.com/flagos-ai/KernelGen",
