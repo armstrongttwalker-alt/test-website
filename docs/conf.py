@@ -198,6 +198,7 @@ html_theme_options = {
         "path/to/page": [],
     "footer_start": ["copyright",],
     "footer_end": []
+    "show_sphinx": False, 
     },
 }
 
