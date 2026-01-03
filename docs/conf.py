@@ -195,19 +195,20 @@ html_theme_options = {
         "zh/index": [],
         "en/index": [],
     },
-    "footer_start": ["copyright",],
+    "footer_start": ["copyright"],
     "footer_end": [],
     "show_sphinx": False, 
 }
 
-# html_context = {
+html_context = {
+    "default_mode": "light"
 # #     "conf_py_path": f"/docs/{docset}/",
-#     "display_github": True,
-# #     "github_user": "armstrongttwalker-alt",
+#     # "display_github": True,
+#     "github_user": "armstrongttwalker-alt",
 #     "github_repo": "https://github.com/flagos-ai/KernelGen",
 # #     "github_version": "main",
 # #     "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
-# }
+}
 
 rst_epilog = """
 .. |org_brand| replace:: KernelGen Community
