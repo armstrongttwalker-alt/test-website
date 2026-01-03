@@ -191,11 +191,11 @@ html_theme_options = {
     # "announcement": "<b>v3.0.0</b> is now out! See the Changelog for details",
 }
 
-# html_context = {
+html_context = {
 #     "conf_py_path": f"/docs/{docset}/",
-#     "display_github": True,
+    "display_github": True,
 #     "github_user": "armstrongttwalker-alt",
-#     "github_repo": "test-i18n-KernelGen",
+    "github_repo": "https://github.com/flagos-ai/KernelGen",
 #     "github_version": "main",
 #     "plausible_domain": f"{os.environ.get('READTHEDOCS_PROJECT')}.readthedocs.io",
 # }
