@@ -319,3 +319,46 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(30, 107, 255, 0.15);
 }
+
+/* dark mode for nav bar */
+@media (prefers-color-scheme: dark) {
+  /* 导航栏容器 */
+  .bd-header,
+  .navbar {
+    background-color: var(--flagos-gray-100);
+    border-bottom: 1px solid var(--flagos-border);
+  }
+  
+  /* nav brand */
+  .navbar-brand .title {
+    color: var(--flagos-text) !important;
+  }
+  
+  /* nav icon */
+  .pst-navbar-icon svg,
+  .search-button-field svg {
+    color: var(--flagos-text);
+  }
+  
+  /* search */
+  .search-button-field {
+    color: var(--flagos-text);
+    background-color: var(--flagos-gray-200);
+    border: 1px solid var(--flagos-border);
+  }
+  
+  .search-button-field:hover {
+    background-color: var(--flagos-gray-300);
+  }
+  
+  /* kbd shortcut */
+  .search-button__kbd-shortcut {
+    color: var(--flagos-text-light);
+  }
+  
+  .kbd-shortcut__modifier {
+    background-color: var(--flagos-gray-300);
+    color: var(--flagos-text);
+    border: 1px solid var(--flagos-border);
+  }
+}
