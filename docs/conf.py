@@ -165,7 +165,7 @@ gettext_compact = False
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static", f"{docset}/_static"]
-html_css_files = ["css/custom.css"]
+html_css_files = ["custom.css"]
 # 先不添加 sphinx_prompt_css.css，可能不存在
 html_js_files = []
 
