@@ -304,8 +304,18 @@ body {
 }
 </style>
 
-# FlagOpen 大模型技术开源体系</h1>
+# FlagOpen 大模型技术开源体系
+:class: hidden-title
 
+<style>
+.hidden-title {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+</style>
 
 
 <div class="flagos-header">
