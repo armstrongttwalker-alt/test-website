@@ -305,52 +305,36 @@ body {
 <div class="flagos-header">
   <h1>FlagOS</h1>
   <p>A unified, open-source system software stack designed for a variety of AI chips</p>
-  <a href="#" class="flagos-overview-btn">
+  <a href="#" class="flagos-outline-btn">
     <span>FlagOS Overview</span>
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+      <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </a>
 </div>
 
 <style>
-/* 添加按钮样式 */
-.flagos-overview-btn {
+.flagos-outline-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background: var(--flagos-blue);
-  color: white;
-  padding: 0.875rem 2rem;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--flagos-blue);
+  padding: 0.75rem 1.75rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.125rem;
   transition: all 0.2s ease;
-  border: 2px solid transparent;
+  border: 2px solid var(--flagos-blue);
   margin-top: 1rem;
 }
 
-.flagos-overview-btn:hover {
-  background: var(--flagos-blue-dark);
+.flagos-outline-btn:hover {
+  background: var(--flagos-blue);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(30, 107, 255, 0.2);
-}
-
-.flagos-overview-btn svg {
-  transition: transform 0.2s ease;
-}
-
-.flagos-overview-btn:hover svg {
-  transform: translateX(4px);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .flagos-overview-btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-  }
+  box-shadow: 0 4px 12px rgba(30, 107, 255, 0.15);
 }
 </style>
 
