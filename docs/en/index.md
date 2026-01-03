@@ -68,7 +68,7 @@ sd_hide_title: true
       A scalable and adaptive unified communication library for cross-chip environments.
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link">MORE</a>
+      <a href="https://test-i18n-kernelgen-en.readthedocs.io/en/latest/" class="card-link">MORE</a>
     </div>
   </div>
 
