@@ -52,10 +52,10 @@ body {
 }
 
 .flagos-header p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--flagos-text-light);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* 网格布局 */
