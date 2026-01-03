@@ -169,8 +169,8 @@ html_css_files = ["custom.css"]
 # 先不添加 sphinx_prompt_css.css，可能不存在
 html_js_files = []
 
-html_logo = "img/logo.svg"
-html_favicon = "img/logo.svg"
+html_logo = "img/logo.png"
+html_favicon = "img/logo.png"
 # html_theme_options = {
 #     "logo_only": True,
 # }
