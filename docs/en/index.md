@@ -305,14 +305,8 @@ body {
 </style>
 
 
-Bokeh documentation
-===================
-
-Bokeh is a Python library for creating interactive visualizations for modern
-web browsers. It helps you build beautiful graphics, ranging from simple plots
-to complex dashboards with streaming datasets. With Bokeh, you can create
-JavaScript-powered visualizations without writing any JavaScript yourself.
-
+<!-- pydata主题需要这个标题来设置页面标题 -->
+<span style="display:none"># FlagOS Documentation</span>
 
 <div class="flagos-header">
   <h1>FlagOpen 大模型技术开源体系</h1>
