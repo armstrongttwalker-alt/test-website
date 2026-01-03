@@ -210,7 +210,7 @@ html_theme_options = {
 }
 
 html_context = {
-    "default_mode": "light"
+    "default_mode": "dark"
 # #     "conf_py_path": f"/docs/{docset}/",
 #     # "display_github": True,
 #     "github_user": "armstrongttwalker-alt",
