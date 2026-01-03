@@ -1,9 +1,5 @@
 ---
-title: FlagOpen 大模型技术开源体系
-site:
-  hide_outline: true
-  hide_toc: true
-  hide_title_block: true
+sd_hide_title: true
 ---
 
 <style>
