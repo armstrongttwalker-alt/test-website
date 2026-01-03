@@ -196,6 +196,8 @@ html_theme_options = {
     # "announcement": "<b>v3.0.0</b> is now out! See the Changelog for details",
     "secondary_sidebar_items": {
         "path/to/page": [],
+    "footer_start": ["copyright",],
+    "footer_end": []
     },
 }
 
