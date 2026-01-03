@@ -72,8 +72,8 @@ multiproject_projects = {
     "en": {
         "use_config_file": False,
         "config": {
-            "project": "FlagOS Documentation",
-            "html_title": "FlagOS Documentation",
+            "project": "",
+            "html_title": "",
         },
     },
     "zh": {
