@@ -192,9 +192,10 @@ html_theme_options = {
     "use_repository_button": True,
     # "announcement": "<b>v3.0.0</b> is now out! See the Changelog for details",
     "secondary_sidebar_items": {
-        "path/to/page": [],
+        "zh/index": [],
+        "en/index": [],
     },
-    "footer_start": ["copyright,"],
+    "footer_start": ["copyright",],
     "footer_end": [],
     "show_sphinx": False, 
 }
