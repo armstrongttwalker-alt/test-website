@@ -307,11 +307,7 @@ body {
 <!-- 隐藏的标题，用于浏览器标签页 -->
 <h1 class="hidden-title">FlagOpen 大模型技术开源体系</h1>
 
-<style>
-.hidden-title {
-    display: none;
-}
-</style>
+
 
 <div class="flagos-header">
   <h1>FlagOpen 大模型技术开源体系</h1>
