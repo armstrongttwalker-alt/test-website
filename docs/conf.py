@@ -163,6 +163,8 @@ locale_dirs = [
 ]
 gettext_compact = False
 
+html_short_title = ""
+
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static", f"{docset}/_static"]
 html_css_files = ["custom.css"]
