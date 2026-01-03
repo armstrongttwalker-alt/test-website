@@ -7,7 +7,7 @@ sd_hide_title: true
 <div class="flagos-header">
   <h1>FlagOS</h1>
   <p>A unified, open-source system software stack designed for a variety of AI chips</p>
-  <a href="#" class="flagos-outline-btn">
+  <a href="overview.html" class="flagos-outline-btn">
     <span>FlagOS Overview</span>
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
       <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
