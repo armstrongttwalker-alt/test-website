@@ -186,7 +186,7 @@ html_theme_options = {
         "text": "FlagOS Documentation",
         # "image_light": "_static/logo-light.png",
         # "image_dark": "_static/logo-dark.png",
-    }
+    },
     "home_page_in_toc": True,
     "use_download_button": False,
     "repository_url": "https://github.com/flagos-ai/KernelGen",
