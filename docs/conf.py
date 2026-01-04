@@ -72,7 +72,7 @@ multiproject_projects = {
     "en": {
         "use_config_file": False,
         "config": {
-            "project": "FlagOS Documentation",
+            "project": "Documentation",
             "html_title": "FlagOS Documentation",
         },
     },

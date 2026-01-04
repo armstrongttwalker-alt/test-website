@@ -97,10 +97,10 @@ sd_hide_title: true
 <div class="call-to-action">
   <h2>Start to Use FlagOS</h2>
   <p>Join us to co-build an open AI chip development ecosystem</p>
-  <a href="#">
+  <a href="https://flagos.io/">
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 6V18M18 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    View full document
+    FlagOS Homepage
   </a>
 </div>
