@@ -364,9 +364,33 @@ body {
 }
 
 
-/* copyright color */
+/* ===== FOOTER 完整样式修复 ===== */
+
+/* 基础样式 */
+footer.bd-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--flagos-border, #e9ecef);
+  padding: 2rem 0;
+}
+
+/* 版权文字样式 */
+.footer-item .copyright {
+  color: var(--flagos-text, #212529); /* 浅色模式下深色 */
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* 暗色模式适配 */
 @media (prefers-color-scheme: dark) {
-  .copyright {
-    color: #ffffff !important;
+  footer.bd-footer {
+    background-color: var(--flagos-gray-100, #161b22);
+    border-top-color: var(--flagos-border, #30363d);
+  }
+  
+  .footer-item .copyright {
+    color: #f0f6fc !important; /* 强制改为浅色 */
+    opacity: 0.8;
   }
 }
