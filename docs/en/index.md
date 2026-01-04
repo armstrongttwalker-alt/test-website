@@ -74,9 +74,6 @@ sd_hide_title: true
 
   <!-- KernelGen -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">KG</span>
-    </div>
     <h3 class="card-title">KernelGen</h3>
     <div class="card-description">
       An operator auto-generation tool.
