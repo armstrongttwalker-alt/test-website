@@ -2,7 +2,7 @@
 sd_hide_title: true
 ---
 
-# FlagOS Documentation
+# Documentation
 
 <div class="flagos-header">
   <h1>FlagOS</h1>
