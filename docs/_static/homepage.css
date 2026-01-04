@@ -19,6 +19,7 @@
   --flagos-border: #e9ecef;
   --flagos-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   --flagos-shadow-hover: 0 12px 24px rgba(30, 107, 255, 0.12);
+  --flagos-footer-bg: #ffffff;
 }
 
 * {
@@ -206,6 +207,7 @@ body {
     --flagos-border: #30363d;
     --flagos-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     --flagos-shadow-hover: 0 12px 24px rgba(30, 107, 255, 0.2);
+    --flagos-footer-bg: #0d1117;
   }
   
   body {
@@ -361,4 +363,10 @@ body {
     color: var(--flagos-text);
     border: 1px solid var(--flagos-border);
   }
+}
+
+/* apply dark and light variables */
+.bd-footer__inner.bd-page-width,
+footer.bd-footer {
+  background-color: var(--flagos-footer-bg) !important;
 }
