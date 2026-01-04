@@ -2,7 +2,7 @@
 sd_hide_title: true
 ---
 
-# FlagOS Documentation
+# Documentation
 
 <div class="flagos-header">
   <h1>FlagOS</h1>
@@ -17,7 +17,7 @@ sd_hide_title: true
 
 <div class="flagos-grid">
   <!-- FlagGems -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="01">
     <h3 class="card-title">FlagGems</h3>
     <div class="card-description">
       A high-performance general-purpose operator library implemented with the Triton programming language and its extended languages.
@@ -28,7 +28,7 @@ sd_hide_title: true
   </div>
 
   <!-- FlagTree -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="02">
     <h3 class="card-title">FlagTree</h3>
     <div class="card-description">
       An open-source, unified compiler for multiple AI chips.
@@ -39,7 +39,7 @@ sd_hide_title: true
   </div>
 
   <!-- FlagScale -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="03">
     <h3 class="card-title">FlagScale</h3>
     <div class="card-description">
       A comprehensive toolkit designed to support the entire lifecycle of large models.
@@ -50,7 +50,7 @@ sd_hide_title: true
   </div>
 
   <!-- FlagCX -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="04">
     <h3 class="card-title">FlagCX</h3>
     <div class="card-description">
       A scalable and adaptive unified communication library for cross-chip environments.
@@ -61,7 +61,7 @@ sd_hide_title: true
   </div>
 
   <!-- KernelGen -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="05">
     <h3 class="card-title">KernelGen</h3>
     <div class="card-description">
       An operator auto-generation tool.
@@ -72,7 +72,7 @@ sd_hide_title: true
   </div>
 
   <!-- FlagRelease -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="06">
     <h3 class="card-title">FlagRelease</h3>
     <div class="card-description">
       A platform dedicated to the automatic migration, adaptation and release of large models for multi-architecture AI chips.
@@ -83,7 +83,7 @@ sd_hide_title: true
   </div>
 
   <!-- FlagPerf -->
-  <div class="flagos-card">
+  <div class="flagos-card" data-index="07">
     <h3 class="card-title">FlagPerf</h3>
     <div class="card-description">
       An integrated AI hardware evaluation engine.
@@ -97,10 +97,10 @@ sd_hide_title: true
 <div class="call-to-action">
   <h2>Start to Use FlagOS</h2>
   <p>Join us to co-build an open AI chip development ecosystem</p>
-  <a href="#">
+  <a href="https://flagos.io/">
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 6V18M18 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    View full document
+     FlagOS Homepage
   </a>
 </div>
