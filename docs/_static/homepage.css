@@ -375,7 +375,7 @@ footer.bd-footer {
 
 /* 版权文字样式 */
 .footer-item .copyright {
-  color: var(--flagos-text, #212529); /* 浅色模式下深色 */
+  color: var(--flagos-text, #f0f6fc); /* 浅色模式下深色 */
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 0;
