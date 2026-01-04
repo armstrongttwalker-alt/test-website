@@ -18,9 +18,6 @@ sd_hide_title: true
 <div class="flagos-grid">
   <!-- FlagGems -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">FG</span>
-    </div>
     <h3 class="card-title">FlagGems</h3>
     <div class="card-description">
       A high-performance general-purpose operator library implemented with the Triton programming language and its extended languages.
@@ -32,9 +29,6 @@ sd_hide_title: true
 
   <!-- FlagTree -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">FT</span>
-    </div>
     <h3 class="card-title">FlagTree</h3>
     <div class="card-description">
       An open-source, unified compiler for multiple AI chips.
@@ -46,9 +40,6 @@ sd_hide_title: true
 
   <!-- FlagScale -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">FS</span>
-    </div>
     <h3 class="card-title">FlagScale</h3>
     <div class="card-description">
       A comprehensive toolkit designed to support the entire lifecycle of large models.
@@ -60,9 +51,6 @@ sd_hide_title: true
 
   <!-- FlagCX -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">CX</span>
-    </div>
     <h3 class="card-title">FlagCX</h3>
     <div class="card-description">
       A scalable and adaptive unified communication library for cross-chip environments.
@@ -85,9 +73,6 @@ sd_hide_title: true
 
   <!-- FlagRelease -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">FR</span>
-    </div>
     <h3 class="card-title">FlagRelease</h3>
     <div class="card-description">
       A platform dedicated to the automatic migration, adaptation and release of large models for multi-architecture AI chips.
@@ -99,9 +84,6 @@ sd_hide_title: true
 
   <!-- FlagPerf -->
   <div class="flagos-card">
-    <div class="card-icon-wrapper">
-      <span class="card-icon">FP</span>
-    </div>
     <h3 class="card-title">FlagPerf</h3>
     <div class="card-description">
       An integrated AI hardware evaluation engine.
