@@ -364,19 +364,9 @@ body {
 }
 
 
-/* ===== FOOTER STYLES ===== */
-
 /* copyright color */
-.footer-item .copyright {
-  color: var(--flagos-text, #212529) !important;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* in dark mode */
 @media (prefers-color-scheme: dark) {
-  .footer-item .copyright {
-    color: var(--flagos-gray-300, #dee2e6) !important;
+  .copyright {
+    color: #ffffff !important;
   }
 }
