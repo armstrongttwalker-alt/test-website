@@ -366,27 +366,17 @@ body {
 
 /* ===== FOOTER STYLES ===== */
 
-/* Footer background */
-:root {
-  --flagos-footer-bg: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --flagos-footer-bg: #0d1117;
-  }
-}
-
-footer.bd-footer {
-  background-color: var(--flagos-footer-bg) !important;
-  border-top: 1px solid var(--flagos-border);
-}
-
-.bd-footer__inner.bd-page-width {
-  background-color: transparent !important;
-}
-
 /* copyright color */
 .footer-item .copyright {
-  color: var(--flagos-text-light) !important;
+  color: var(--flagos-text, #212529) !important;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* in dark mode */
+@media (prefers-color-scheme: dark) {
+  .footer-item .copyright {
+    color: var(--flagos-gray-300, #dee2e6) !important;
+  }
 }
