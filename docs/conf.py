@@ -185,7 +185,7 @@ html_sidebars = {
 html_theme_options = {
     # "logo_only": False,
     "logo": {
-        "text": "FlagOS Documentation",
+        "text": "Documentation",
         # "image_light": "_static/logo-light.png",
         # "image_dark": "_static/logo-dark.png",
     },
